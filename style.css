@@ -1,0 +1,112 @@
+:root {
+    --main-font: "Open Sans", serif;
+    --title-font:;
+    --large-fs:;
+    --medium-fs:; 
+    --main-bg-color:#078080;
+    --icon-width: 17px;
+    --icon-height: 17px;
+    --footer-fc:;
+    --margin-body: 30px;
+    --margin-outer: 100px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--main-font);
+}
+
+main {
+    margin: 30px var(--margin-outer);
+}
+
+.top-background{
+    background-color: var(--main-bg-color);
+
+}
+
+.intro {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    height: 300px;
+    /* max-height: 900px; */
+    padding: 15px 30px;
+    background-color:beige;
+    gap: 30px;
+    box-shadow: 2px 2px 2px grey ;
+}
+
+.main-img {
+    background-image: url("https://images.unsplash.com/photo-1731054152371-b5c1721961bb?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    width: 300px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+.main-img h1 {
+    position: absolute;
+    bottom: 5px;
+    right: 60px;
+    font-size: 25px;
+}
+
+.icons {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.icon{
+    width: var(--icon-width);
+    height: var(--icon-height);
+}
+
+.my-work {
+    margin: 150px 0;
+}
+
+.my-work-tile {
+    background-color: orange;
+    height:350px;
+    width: 300px;
+}
+
+.my-work-tile-img {
+    background-color: red;
+    height: 200px;
+}
+
+.my-work-tile-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.my-work-tile-project {
+    padding: 10px 15px;
+}
+
+.my-work-icons {
+    display: flex;
+    gap: 10px;
+}
